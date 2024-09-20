@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'BarlowSemiCondensed-Regular';
+    src: url(BarlowSemiCondensed-Regular.ttf);
+}
+body{
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+}
+p{
+    margin: 0;
+}
+.main-body{
+    font-family: 'BarlowSemiCondensed-Regular';
+    font-size: 13px;
+    display: grid;
+    grid-template: 'myArea myArea . . ';
+    grid-gap: 20px;
+    /* align-items: center; */
+    justify-items: center;
+    color: white;
+}
+.artical-1{
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+    background-color: hsl(263, 55%, 52%);
+    order: 1;
+    grid-area: myArea;
+    padding: 20px;
+    border-radius: 12px;
+}
+.artical-2{
+    background-color: hsl(217, 19%, 35%);
+    order: 2;
+    padding: 20px;
+    border-radius: 12px;
+}
+.artical-3{
+    background-color: hsl(0, 0%, 100%);
+    order: 4;
+    box-shadow: 10px 10px 20px hsl(0, 0%, 81%);
+    padding: 20px;
+    border-radius: 12px;
+    color: black;
+}
+.artical-4{
+    background-color: hsl(219, 29%, 14%);
+    order: 5;
+    grid-area: 2 / 2 / 2 / 4;
+    padding: 20px;
+    border-radius: 12px;
+}
+.artical-5{
+    background-color: hsl(0, 0%, 100%);
+    grid-area: 1 / 4 / 3 / 5;
+    order: 3;
+    box-shadow: 10px 10px 20px hsl(0, 0%, 81%);
+    padding: 20px;
+    border-radius: 12px;
+    color: black;
+}
+.author p{
+    padding: 10px;
+}
+.author p:first-of-type{
+    font-size: large;
+}
+.author p:nth-of-type(2){
+    font-weight: lighter;
+    opacity: 50%;
+}
+.author-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 14px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.author-info img{
+    height: 40px;
+    width: 40px;
+    border-radius:40px;
+    border: 2px solid white;
+}
+.author-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;  
+}
+.author-name p:first-of-type{
+    font-size: medium;
+}
+.author-name p:nth-of-type(2){
+    opacity: 50%;
+}
